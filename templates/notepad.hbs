@@ -1,0 +1,15 @@
+<div class="notepad-inner component-inner" role="region" aria-label="{{_globals._components._notepad.ariaRegion}}">
+    {{> component this}}
+    <div class="notepad-widget component-widget">
+        <div class="textinput-item component-item component-item-color component-item-border clearfix {{#unless ../_isEnabled}}{{#if correct}}correct{{else}}incorrect{{/if}}{{/unless}}">
+            <textarea class="textinput-item-textbox" maxlength="{{_maxlength}}" placeholder="{{placeholder}}" role="textbox">{{userInput}}</textarea>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="buttons-inner button-inner">
+            <div class="buttons-cluster clearfix">
+                <button class="buttons-action clear-text" aria-label="Clear text input">{{{btnText}}}</button>
+            </div>
+        </div>
+    </div>
+</div>

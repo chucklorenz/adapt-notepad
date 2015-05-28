@@ -1,0 +1,17 @@
+{
+  "name": "adapt-noteplad",
+  "version": "0.0.1",
+  "homepage": "https://github.com/darylhedley/adapt-notepad",
+  "authors": [
+    "Daryl Hedley <darylhedley@hotmail.com>"
+  ],
+  "displayName" : "Notepad",
+  "component" : "notepad",
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-notepad.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

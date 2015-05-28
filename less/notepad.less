@@ -1,0 +1,28 @@
+.notepad-component {
+    textarea {
+        overflow: auto;
+        width: 100%;
+        display:block;
+        min-height: 100px;
+        background-color: #fff;
+        padding: @item-padding;
+        position: relative;
+        border: @item-border;
+        margin-bottom: 2px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .textinput-item-textbox {
+        float: left;
+        .dir-rtl & {
+            float: right;
+        }
+    }
+
+    button {
+        width:49.5%;
+        float:left;
+    }
+}
