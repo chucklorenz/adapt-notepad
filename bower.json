@@ -7,7 +7,7 @@
   ],
   "displayName" : "Notepad",
   "component" : "notepad",
-  "description": "A simple presentation component",
+  "description": "A presentation component that preserves a learner's input until it is cleared or the session ends.",
   "main": "/js/adapt-notepad.js",
   "keywords": [
     "adapt-plugin",
