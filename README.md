@@ -44,7 +44,7 @@ Text that appears within the textarea before the learner enters any input.
 
 This text will appear on the button that clears the content from the textarea.
 
-####maxlength
+####_maxlength
 
 The HTML `maxlength` attribute of the textarea. Restricts the number of characters that may be entered.
 
@@ -58,5 +58,5 @@ To be completed.
 
 ##Browser spec
 
-This component has been tested to the standard Adapt browser specification.
+
 
