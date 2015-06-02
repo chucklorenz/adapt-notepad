@@ -1,19 +1,19 @@
 {
   "name": "adapt-notepad",
   "version": "0.0.1",
-  "description": "A text component",
+  "description": "A presentation component that preserves a learner's input until it is cleared or the session ends.",
   "main": "",
   "scripts": {
     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/adaptlearning/adapt-contrib-text.git"
+    "url": "git://github.com/chucklorenz/adapt-notepad.git"
   },
   "author": "AdaptLearning",
   "license": "GPL v3",
   "bugs": {
-    "url": "https://github.com/adaptlearning/adapt-contrib-text/issues"
+    "url": "https://github.com/chucklorenz/adapt-notepad/issues"
   },
   "devDependencies": {
     "karma": "0.10",
