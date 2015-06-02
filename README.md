@@ -32,15 +32,23 @@ You can use this setting to add custom classes to your template and LESS file.
 
 This defines the position of the component in the block. Values can be `full`, `left` or `right`. 
 
-####displayTitle and body
+####title, displayTitle, body, and instruction
 
-The `displayTitle` and `body` settings can be left blank. Although the blank component could be used instead: [adapt-contrib-blank](https://github.com/adaptlearning/adapt-contrib-blank)
+These are the standard core attirbutes of Adapt presentation components.  
 
-####instruction
+####placeholder
+
+Text that appears within the textarea before the learner enters any input.
 
 ####btnText
 
-####maxLength
+This text will appear on the button that clears the content from the textarea.
+
+####maxlength
+
+The HTML `maxlength` attribute of the textarea. Restricts the number of characters that may be entered.
+
+
 
 
 
