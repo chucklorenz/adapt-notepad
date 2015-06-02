@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "homepage": "https://github.com/chucklorenz/adapt-notepad",
   "authors": [
-    "Daryl Hedley <chucklorenz@yahoo.com>"
+    "Chuck Lorenz<chucklorenz@yahoo.com>"
   ],
   "displayName" : "Notepad",
   "component" : "notepad",
