@@ -1,7 +1,9 @@
 {
-  "name": "adapt-noteplad",
+  "name": "adapt-notepad",
   "version": "0.0.1",
+  "framework": "^2.0.0",
   "homepage": "https://github.com/chucklorenz/adapt-notepad",
+  "issues": "https://github.com/chucklorenz/adapt-notepad/issues",
   "authors": [
     "Chuck Lorenz<chucklorenz@yahoo.com>"
   ],

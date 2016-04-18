@@ -1,8 +1,8 @@
-<div class="notepad-inner component-inner" role="region" aria-label="{{_globals._components._notepad.ariaRegion}}">
+    <div class="notepad-inner component-inner" role="region" aria-label="{{_globals._components._notepad.ariaRegion}}" {{#if _globals._components._notepad.ariaRegion}}tabindex="0"{{/if}}>
     {{> component this}}
     <div class="notepad-widget component-widget">
-        <div class="textinput-item component-item component-item-color component-item-border clearfix {{#unless ../_isEnabled}}{{#if correct}}correct{{else}}incorrect{{/if}}{{/unless}}">
-            <textarea class="textinput-item-textbox" maxlength="{{_maxlength}}" placeholder="{{placeholder}}" role="textbox">{{userInput}}</textarea>
+        <div class="notepad-item component-item component-item-color component-item-border clearfix">
+            <textarea class="notepad-item-textbox" maxlength="{{_maxlength}}" placeholder="{{placeholder}}" role="textbox">{{userInput}}</textarea>
         </div>
     </div>
     <div class="buttons">

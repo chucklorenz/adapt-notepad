@@ -1,7 +1,7 @@
 /*
  * adapt-notepad
  * License - http://github.com/adaptlearning/adapt_framework/blob/master/LICENSE
- * Maintainers - Chuck Lorenz <chuck.lorenz@kineo.com>
+ * Maintainers - Chuck Lorenz <chucklorenz@yahoo.com>
  */
 define(function(require) {
 
@@ -10,41 +10,20 @@ define(function(require) {
 
     var Notepad = ComponentView.extend({
         events: {
-            'click button': 'onButtonClicked',
+            'click button': 'onClearButtonClicked',
             'blur textarea': 'storeUserAnswer'
         },
 
-        //preRender: function() {
-            // Checks to see if the notepad should be reset on revisit
-            //this.checkIfResetOnRevisit();
-        //},
-
         postRender: function() {
             this.setReadyStatus();
-
-            if (this.model.get('userInput')) {
-                this.resetUserAnswer();
-            }
-
-            // Check if instruction or body is set, otherwise force completion
-            var cssSelector = this.$('.component-instruction').length > 0
-                ? '.component-instruction'
-                : (this.$('.component-body').length > 0 ? '.component-body' : null);
-
-            if (!cssSelector) {
-                this.setCompletionStatus();
-            } else {
-                this.model.set('cssSelector', cssSelector);
-                this.$(cssSelector).on('inview', _.bind(this.inview, this));
-            }
+            if (this.model.get('userInput')) this.resetUserAnswer();
+            this.$('.notepad-widget').on('inview', _.bind(this.inview, this));
         },
 
-        //This preserve the state of the users answers for returning or showing the users answer
         storeUserAnswer: function() {
             this.model.set('userInput', this.$('textarea').val());
         },
 
-        // Used by the question view to reset the stored user answer
         resetUserAnswer: function() {
             this.$('textarea').val(this.model.Get('userInput'));
             this.forceFixedPositionFakeScroll();
@@ -58,20 +37,10 @@ define(function(require) {
             }
         },
 
-        onButtonClicked: function() {
+        onClearButtonClicked: function() {
             this.$('.textinput-item-textbox').val('');
             this.storeUserAnswer();
         },
-
-        // Used to check if the notepad should reset on revisit
-        //checkIfResetOnRevisit: function() {
-        //    var isResetOnRevisit = this.model.get('_isResetOnRevisit');
-
-            // If reset is enabled set defaults
-        //    if (isResetOnRevisit) {
-        //        this.model.reset(isResetOnRevisit);
-        //    }
-        //},
 
         inview: function(event, visible, visiblePartX, visiblePartY) {
             if (visible) {
@@ -85,7 +54,7 @@ define(function(require) {
                 }
 
                 if (this._isVisibleTop && this._isVisibleBottom) {
-                    this.$(this.model.get('cssSelector')).off('inview');
+                    this.$(this.model.get('.notepad-widget')).off('inview');
                     this.setCompletionStatus();
                 }
             }
