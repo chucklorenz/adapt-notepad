@@ -1,6 +1,6 @@
 #adapt-notepad
 
-A very simple component that merely presents a textarea for the learner to keep notes throughout the session (or until she clicks the Clear button). There is no Submit button; it does not send or store the data anywhere. This component is most useful if the course is taught in a group of learners, and the learners need a place to hold questions and comments until the appropriate time. It is less useful (not useful??) when the learner works through the course alone, since the contents are erased when the session is terminated.
+<img src="/notepad.jpg?raw=true" align="right">A very simple component that merely presents a textarea for the learner to keep notes throughout the session (or until she clicks the Clear button). There is no Submit button; it does not send or store the data anywhere. This component is most useful if the course is taught in a group of learners, and the learners need a place to hold questions and comments until the appropriate time. It is less useful (not useful??) when the learner works through the course alone, since the contents are erased when the session is terminated.
 
 ##Installation
 
@@ -29,7 +29,8 @@ In addition to the attributes specifically listed below, **Notepad** implements 
 
 **btnText** (string): Text that appears on the button. 
 
-**_maxlength** (number): The HTML `maxlength` attribute of the textarea. Restricts the number of characters that may be entered.
+**_maxlength** (number): The HTML `maxlength` attribute of the textarea. Restricts the number of characters that may be entered.  
+<div float align=right><a href="#top">Back to Top</a></div>
 
 ### Accessibility
 **Notepad** has been assigned a label using the [aria-label](https://github.com/adaptlearning/adapt_framework/wiki/Aria-Labels) attribute: **ariaRegion**. This label is not a visible element. It is utilized by assistive technology such as screen readers. Should the region's text need to be customised, it can be found within the **_globals** object in [*properties.schema*](https://github.com/adaptlearning/adapt-notepad/blob/master/properties.schema).   
