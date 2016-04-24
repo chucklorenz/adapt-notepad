@@ -25,7 +25,7 @@ define(function(require) {
         },
 
         resetUserAnswer: function() {
-            this.$('textarea').val(this.model.Get('userInput'));
+            this.$('textarea').val(this.model.get('userInput'));
             this.forceFixedPositionFakeScroll();
         },
 
